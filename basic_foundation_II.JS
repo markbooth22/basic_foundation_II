@@ -5,34 +5,6 @@ function biggieSize(arr){
     }
 }
 
-// Max/Min/Avg - Given an array with multiple values, write a function that returns a new array that only contains the maximum, minimum, and average values of the original array. (e.g. [1,5,10,-2] will return [10,-2,3.5])
-
-
-function maxMinAvg(arr) {
-    var maxNum = arr[0]
-    var newArr = []
-    var minNum = arr[0]
-    var sum = 0
-
-    for (var i = 0; i < arr.length; i++){
-        sum += arr[i]
-        if(arr[i] > maxNum){
-            maxNum = arr[i]
-        }
-        if(arr[i] < minNum){
-            minNum = arr[i]
-        }
-    }
-    newArr.push(maxNum)
-    newArr.push(minNum)
-
-    var avg = sum/arr.length
-    newArr.push(avg)
-
-    return newArr
-}
-
-console.log(maxMinAvg([-2,-3,-4,6,8,9]))
 
 // Print One, Return Another - Build a function that takes in an array of numbers.  The function should print the second-to-last value in the array, and return the first odd value in the array.
 
