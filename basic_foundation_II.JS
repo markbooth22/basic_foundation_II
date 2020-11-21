@@ -63,3 +63,22 @@ var arr1 = [3,6,8,6,7]
 var double = doubleVision(arr1)
 console.log(arr1)
 console.log(double)
+
+// Increment the Seconds - Given an array of numbers arr, add 1 to every other element, specifically those whose index is odd (arr[1], arr[3], arr[5], etc).  Afterward, console.log each array value and return arr.
+//var num = arr[1],  for loop, for each odd idx add 1, asign it into the arr, console.log and return arr
+
+function incrementSeconds(arr) {
+    for (i = 0; i < arr.length; i++) {
+        if (i % 2 === 1) {
+            arr[i] += 1;
+        }
+        console.log(arr[i]);
+    }
+    return arr;
+}
+
+var arr2 = incrementSeconds([1,2,3,4,5,6,7,8,9,10])
+console.log(arr2)
+
+
+// Swap Toward the Center - Given an array, swap the first and last values, third and third-to-last values, etc.  Example: swapTowardCenter([true,42,"Ada",2,"pizza"]) turns the array into ["pizza", 42, "Ada", 2, true].  swapTowardCenter([1,2,3,4,5,6]) turns the array into [6,2,4,3,5,1].  No need to return the array this time.
