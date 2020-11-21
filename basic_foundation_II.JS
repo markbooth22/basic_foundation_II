@@ -45,3 +45,21 @@ funtion printReturn(arr) {
         }
     }
 }
+
+// Double Vision - Given an array (similar to saying 'takes in an array'), create a function that returns a new array where each value in the original array has been doubled.  Calling double([1,2,3]) should return [2,4,6] without changing the original array.
+// var that creates a new arr, for loop over the arr, each postion and double it and push to the new arr, return the new arr
+
+function doubleVision(arr) {
+    var newArr = [];
+    for(i = 0; i < arr.length; i++) {
+        var num = arr[i];
+        num *= 2;
+        newArr.push(num);
+    }
+    return newArr;
+}
+
+var arr1 = [3,6,8,6,7]
+var double = doubleVision(arr1)
+console.log(arr1)
+console.log(double)
