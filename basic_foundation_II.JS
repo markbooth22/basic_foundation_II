@@ -77,7 +77,18 @@ function incrementSeconds(arr) {
     return arr;
 }
 
-var arr2 = incrementSeconds([1,2,3,4,5,6,7,8,9,10])
+function betterIncrementSeconds(arr) {
+    return arr.map((currentNum, idx) => {
+        if (idx % 2 === 1) {
+            console.log(currentNum + 1);
+            return currentNum + 1;
+        }
+        console.log(currentNum)
+        return currentNum
+    })
+}
+
+var arr2 = betterIncrementSeconds([1,2,3,4,5,6,7,8,9,10])
 console.log(arr2)
 
 
